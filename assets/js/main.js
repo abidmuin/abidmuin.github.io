@@ -84,15 +84,27 @@ modalBtns.forEach((modalBtn, i) => {
     })
 })
 
-modalCloses.forEach((modalClose)=>{
-    modalClose.addEventListener('click', ()=>{
-        modalViews.forEach((modalView) =>{
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () => {
+        modalViews.forEach((modalView) => {
             modalView.classList.remove('active-modal')
         })
     })
 })
 /*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper('.portfolio__container', {
+    cssMode: true,
+    loop: true,
 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+    }
+})
 
 /*==================== TESTIMONIAL ====================*/
 
