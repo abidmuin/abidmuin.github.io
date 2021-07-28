@@ -613,7 +613,7 @@ img {
 /*==================== SERVICES ====================*/
 .services__container {
     gap: 1.5rem;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .services__content {
